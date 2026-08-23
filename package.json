@@ -1,0 +1,14 @@
+{
+  "name": "thesaga-annual-netlify",
+  "version": "7.2.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@netlify/blobs": "10.7.10",
+    "date-holidays": "3.26.3",
+    "exceljs": "4.4.0"
+  }
+}
