@@ -134,7 +134,7 @@ async function renderLogin() {
         <div class="login-copy">
           <div class="logo-large">연</div>
           <h1>두 회사를 하나로 관리하는<br>통합 연차관리 시스템</h1>
-          <p>해올과 ㈜더사가 직원 명단, 입사일, 기존 연차 사용자료가 초기 데이터로 반영되어 있습니다.</p>
+          <p>우림PTS1과 ㈜우림PTS 직원 명단, 입사일, 기존 연차 사용자료가 초기 데이터로 반영되어 있습니다.</p>
           <div class="feature-list">
             <div class="feature">✓ 입사일 기준 1년 자동 갱신</div><div class="feature">✓ 잔여 0 이하도 신청</div>
             <div class="feature">✓ 다단계 순차 전자결재</div><div class="feature">✓ 회사별 Excel 다운로드</div>
@@ -181,7 +181,7 @@ async function renderShell() {
   navItems.push(['password', '●', '비밀번호 변경']);
   app.innerHTML = `
     <header class="app-header"><div class="header-inner">
-      <div class="brand"><div class="brand-mark">연</div><div><h1>통합 연차관리</h1><small>해올 · ㈜더사가</small></div></div>
+      <div class="brand"><div class="brand-mark">연</div><div><h1>통합 연차관리</h1><small>우림PTS1 · ㈜우림PTS</small></div></div>
       <div class="user-box"><div class="user-meta"><strong>${esc(me.employee_name)}</strong><span>${esc(me.company_name)} · ${esc(me.login_id)} · ${esc(me.role_label)}</span></div><button id="logout" class="btn outline small">로그아웃</button></div>
     </div></header>
     <div class="layout">
@@ -571,7 +571,7 @@ async function renderShellV6() {
   }
   app.innerHTML = `
     <header class="app-header"><div class="header-inner">
-      <div class="brand"><div class="brand-mark">연</div><div><h1>통합 연차관리</h1><small>해올 · ㈜더사가 · v6.0</small></div></div>
+      <div class="brand"><div class="brand-mark">연</div><div><h1>통합 연차관리</h1><small>우림PTS1 · ㈜우림PTS · v6.0</small></div></div>
       <div class="user-box"><div class="user-meta"><strong>${esc(me.employee_name)}</strong><span>${esc(me.company_name)} · ${esc(me.login_id)} · ${esc(me.role_label)}</span></div><button id="help-button" class="btn outline small">Help</button><button id="logout" class="btn outline small">로그아웃</button></div>
     </div></header>
     <div class="layout"><aside class="sidebar"><nav class="nav-card">${navItems.map(([key, icon, label]) => `<button class="nav-button" data-page="${key}"><span class="nav-icon">${icon}</span>${label}</button>`).join('')}</nav></aside><main class="content"><div id="page"></div></main></div>`;
@@ -851,7 +851,7 @@ async function renderShellV7() {
   navItems.push(['password', '●', '비밀번호 변경']);
   app.innerHTML = `
     <header class="app-header"><div class="header-inner">
-      <div class="brand"><div class="brand-mark">연</div><div><h1>통합 연차관리</h1><small>해올 · ㈜더사가 · v7.2</small></div></div>
+      <div class="brand"><div class="brand-mark">연</div><div><h1>통합 연차관리</h1><small>우림PTS1 · ㈜우림PTS · v7.2</small></div></div>
       <div class="user-box"><div class="user-meta"><strong>${esc(me.employee_name)}</strong><span>${esc(me.company_name)} · ${esc(me.login_id)} · ${esc(me.role_label)}</span></div><button id="help-button" class="btn outline small">Help</button><button id="logout" class="btn outline small">로그아웃</button></div>
     </div></header>
     <div class="layout"><aside class="sidebar"><nav class="nav-card">${navItems.map(([key, icon, label]) => `<button class="nav-button" data-page="${key}"><span class="nav-icon">${icon}</span>${label}</button>`).join('')}</nav></aside><main class="content"><div id="page"></div></main></div>`;

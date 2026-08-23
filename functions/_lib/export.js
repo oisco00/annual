@@ -90,7 +90,7 @@ function buildInitialAccountXlsx({ users, companies, sourceAsOf }) {
   const systemUsers = users.filter((u) => u.is_system_account);
   return buildXlsx([
     {
-      name: '직원 로그인 계정', title: '해올·㈜더사가 직원 로그인 계정', subtitle: `${sourceAsOf} 기준 원본 엑셀 명단 40명 · 모든 최초 비밀번호 1111`,
+      name: '직원 로그인 계정', title: '우림PTS1·㈜우림PTS 직원 로그인 계정', subtitle: `${sourceAsOf} 기준 원본 엑셀 명단 40명 · 모든 최초 비밀번호 1111`,
       headers: ['회사', '부서', '사원코드', '직원명', '로그인 ID', '최초 비밀번호', '직급', '입사일', '원본 누적발생', '원본 사용', '원본 잔여', '안내'],
       widths: [16, 13, 11, 11, 14, 13, 11, 12, 13, 11, 11, 30],
       rows: normalUsers.map((u) => [companyMap.get(u.company_id) || '', u.department, u.employee_code, u.employee_name, u.login_id, '1111', u.position, u.join_date, Number(u.source_accrued || 0), Number(u.source_used || 0), Number(u.source_remaining || 0), u.login_id === u.employee_name ? '한글 이름으로 로그인' : '동명이인 구분을 위해 숫자 포함'])
